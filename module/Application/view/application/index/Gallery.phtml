@@ -1,0 +1,199 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('ZF2 ' . $this->translate('Skeleton Application'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php
+        echo $this->headMeta()
+                ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+                ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?php
+        echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                ->prependStylesheet($this->basePath() . '/css/custom.css')
+                ->prependStylesheet($this->basePath() . '/css/bootstrap.css')
+        ?>
+
+        <!-- Scripts -->
+        <?php
+        echo $this->headScript()
+                ->prependFile($this->basePath() . '/js/bootstrap.min.js')
+                ->prependFile($this->basePath() . '/js/jquery.min.js')
+                ->prependFile($this->basePath() . '/js/respond.min.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+                ->prependFile($this->basePath() . '/js/html5shiv.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+        ;
+        ?>
+
+    </head>
+    <body class="body"> 
+        <header class="mainHeader">
+            <div class='logo'>
+                <div class="social">
+                    <p><b>Follow Us</b></p>
+                    <a href="https://twitter.com/@homesteadpsc"><img src='images/icons/twitter.png'/></a>
+                    <a href="https://www.facebook.com/TheHomesteadProjectStreetChildren?fref=ts"><img src='images/icons/facebook_2.png'/></a>
+                </div>
+                <img src=""/>
+            </div>
+            <div class= "navbar navbar-default">
+                <div class= "container">
+                    <div class ="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class ="icon-bar"></span>
+                            <span class ="icon-bar"></span>
+                            <span class ="icon-bar"></span>
+                            <span class ="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav  navbar-nav">
+                            <li><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
+                            <li class='active'><a href="<?php echo $this->url('about') ?>"><?php echo $this->translate('About') ?></a></li>
+
+                            <li class="dropdown">
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+
+                                    Gallery <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+
+                                    <li><a href="<?php echo $this->url('gallery/photos') ?>">Photos</a></li>
+                                    <li><a href="<?php echo $this->url('gallery/videos') ?>">Videos</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="<?php echo $this->url('donate') ?>"><?php echo $this->translate('Donate') ?></a></li>
+                            <li><a href="<?php echo $this->url('volunteering') ?>"><?php echo $this->translate('Volunteering') ?></a></li>
+
+                            <li class="dropdown">
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+
+                                    Our Projects <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+
+                                    <li><a href="<?php echo $this->url('projects/intake') ?>">Intake Shelter</a></li>
+                                    <li><a href="<?php echo $this->url('projects/children') ?>">Children Home</a></li>
+                                    <li><a href="<?php echo $this->url('projects/outreach') ?>">Outreach Work</a></li>
+                                    <li><a href="<?php echo $this->url('projects/prevention') ?>">Prevention and Early Intervention</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li><a href="<?php echo $this->url('contact') ?>"><?php echo $this->translate('CONTACT') ?></a></li>
+                        </ul> 
+
+                    </div>
+
+                </div>
+                <div class='c'></div>
+            </div>
+
+        </header>
+        <div class="d">
+            <div class="carousel-slide" data-ride="carousel" id="carousel-ex">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-ex" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-ex" data-slide-to="1"></li>
+                    <li data-target="#carousel-ex" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active" >
+                        <div class="slider">
+                        </div>
+                        <div class="carousel-caption">
+                            <h2>This is a heading</h2>
+                            <p>This is a paragraph</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="slider2">
+                        </div>
+                        <div class="carousel-caption">
+                            <h2>This is a heading</h2>
+                            <p>This is a paragraph</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="slider3">
+                        </div>
+                        <div class="carousel-caption">
+                            <h2>This is a heading</h2>
+                            <p>This is a paragraph</p>
+                        </div>
+                    </div>
+                    <a href="#carousel-ex" class="left carousel-control" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+
+                    <a href="#carousel-ex" class="right carousel-control" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div> 
+        </div>
+        <div class="wrapper">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class='col-md-7'>
+
+                        <div class="box-1">
+                            <div></div>
+                            <div></div>
+                            <div class=''>
+                                <h1>Home</h1>
+                            </div>
+                            <div class='paragraph'>
+                                <p>Payfast Donations verified as paid to the 
+                                    Homestead via EFT,Debit or Credit Card
+                                    dssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+                                    sdddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                                    sdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsd</p>
+                            </div>
+                            <br/><br/>
+                        </div>
+                    </div>
+
+
+                    <div class='col-md-5'>
+                        <div class="box-2">
+                            <div></div>
+                            <div></div>
+                            <div class='our'>
+                                <h1>Our Programmes</h1>
+                            </div>
+                            <br/><br/>
+                            <p> <a href="#">STREET OUTREACH</a><br/><br/>
+                                <a href="#">THE HOMESTEAD INTAKE SHELTER</a><br/><br/>
+                                <a href="#">PREVENTION</a> <br/><br/>
+                                <a href="#">THE HOMESTEAD CHILDREN'S HOME</a><br/><br/>
+                                <a href="http://www.ubunyebeadworks.co.za/" target="_blank">JOB CREATION</a></p>
+                            <div class='payfast'>
+                                <p>Payfast Donations verified as paid to the <br/>
+                                    Homestead via EFT,Debit or Credit Card</p>
+                            </div>
+                            <br/>
+                            <a href="https://www.payfast.co.za/donate/go/thehomestead" target="_blank" class="done"><img src="images/donate.png"/></a>
+                            <br/><br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/> <br/>
+
+
+            <footer class="mainFooter">
+                <h2>Our Sponsors</h2>
+                <p>Copyright by <a href="#">Jonas Esethu</a> &COPY;2015.All rights reserved.</p>
+            </footer>
+
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>

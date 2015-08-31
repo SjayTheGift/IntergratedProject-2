@@ -1,0 +1,199 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('ZF2 ' . $this->translate('Skeleton Application'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php
+        echo $this->headMeta()
+                ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+                ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?php
+        echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                ->prependStylesheet($this->basePath() . '/css/lightbox.css')
+                ->prependStylesheet($this->basePath() . '/css/custom.css')
+                
+                ->prependStylesheet($this->basePath() . '/css/bootstrap.css')
+                
+        ?>
+
+        <!-- Scripts -->
+        <?php echo $this->headScript()
+           
+            
+            ->prependFile($this->basePath() . '/js/bootstrap.min.js')
+            
+           
+        ; ?>
+
+    </head>
+    <body class="body"> 
+        <header class="mainHeader">
+            <div class='logo'>
+                <div class="social">
+                    <p class="follow"><b>Follow Us</b></p>
+                    <a href="https://twitter.com/@homesteadpsc"><img src='../images/icons/twitter.png'/></a>
+                    <a href="https://www.facebook.com/TheHomesteadProjectStreetChildren?fref=ts"><img src='../images/icons/facebook_2.png'/></a>
+                </div>
+                <img src="../images/logo3.png" class="logo-1"/>
+            </div>
+            <div class= "navbar navbar-default">
+                <div class= "container">
+                    <div class ="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class ="icon-bar"></span>
+                            <span class ="icon-bar"></span>
+                            <span class ="icon-bar"></span>
+                            <span class ="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav  navbar-nav">
+                             <li><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">
+
+                                About <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+
+                                <li><a href="<?php echo $this->url('about/legal') ?>">Legal, NPO, PBO Status</a></li>
+                                <li><a href="http://issuu.com/paulvernonhooper/docs/the_homestead__projects_for_street_/1" target="_blank">Audited Financials  2014  </a></li>
+                                <li><a href="http://issuu.com/paulvernonhooper/docs/homestead_2014_final_low_res/1" target="_blank">Annual Report 2014</a></li>
+                                <li><a href="<?php echo $this->url('about/business') ?>">Business Canvas</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">
+
+                                Gallery <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+
+                                <li><a href="<?php echo $this->url('gallery/photos') ?>">Photos</a></li>
+                                <li><a href="<?php echo $this->url('gallery/videos') ?>">Videos</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="<?php echo $this->url('donate') ?>"><?php echo $this->translate('Donate') ?></a></li>
+                        <li class="active"><a href="<?php echo $this->url('volunteering') ?>"><?php echo $this->translate('Volunteering') ?></a></li>
+                        
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">
+
+                                Our Projects <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+
+                                <li><a href="<?php echo $this->url('projects/intake') ?>">Intake Shelter</a></li>
+                                <li><a href="<?php echo $this->url('projects/children') ?>">Children Home</a></li>
+                                <li><a href="<?php echo $this->url('projects/outreach') ?>">Outreach Work</a></li>
+                                <li><a href="<?php echo $this->url('projects/prevention') ?>">Prevention and Early Intervention</a></li>
+
+                            </ul>
+                        </li>
+                        
+                        <li><a href="<?php echo $this->url('contact') ?>"><?php echo $this->translate('Contact') ?></a></li>
+                        </ul> 
+
+                    </div>
+
+                </div>
+                <div class='c'></div>
+            </div>
+
+        </header>
+        <div class="wrapper">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class='col-md-7'>
+
+                        <div class="box-1">
+                            <div></div>
+                            <div></div>
+                            <div class=''>
+                                <h1>MySchool – Donate as You Shop</h1>
+                            </div>
+                            <div class='paragraph'>
+                                <p><b>The Homestead has been approved as a 
+                                        MySchool Card  Beneficiary 
+                                        (You can support <br/>us and your current beneficiary
+                                        because you can have up to 3 beneficiaries
+                                        on your card)</b></p>
+                                <br/>
+                                <p>We only need 100 people to sign up for 
+                                    our membership to be confirmed.</p>
+
+
+                                <p><b>This means that every time you shop at 
+                                        participating retailers, and swipe your
+                                        MySchool <br/> card,  the Homestead gets hard 
+                                        cash to get and keep children off the street 
+                                        at no extra <br/> cost to you.</b></p>
+
+                                <p>Please fill in and sign the following 
+                                    document and return it to us,  
+                                    The Homestead, ( please do <br/> not send directly to Myschool).</p>
+
+                                <div class="row">
+                                    <div class='col-md-6'>
+
+                                        <img src="images/myschool.png" class='img'/>
+                                        </div>
+                                    <div class='col-md-6'>
+                                        <p class='p'>Email itmyschool:  scan and email to accounts@homestead.org.za<br/><br/>
+                                            Fax it:  The Homestead   021 419 2600<br/><br/>
+                                            Post it:  PO Box 21538,  Kloof Street, 8008<br/><br/>
+                                            Click this link for the MySchool form: <br/> <br/>
+                                            <a href="#">appform_myschool_english_print</a><br/>
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <br/><br/>
+                        </div>
+                    </div>
+
+
+                    <div class='col-md-5'>
+                        <div class="box-2">
+                            <div></div>
+                            <div></div>
+                            <div class='our'>
+                                <h1>Our Programmes</h1>
+                            </div>
+                            <br/><br/>
+                            <p> <a href="<?php echo $this->url('projects/outreach') ?>">STREET OUTREACH</a><br/><br/>
+                                <a href="<?php echo $this->url('projects/intake') ?>">THE HOMESTEAD INTAKE SHELTER</a><br/><br/>
+                                <a href="<?php echo $this->url('projects/prevention') ?>">PREVENTION</a> <br/><br/>
+                                <a href="<?php echo $this->url('projects/children') ?>">THE HOMESTEAD CHILDREN'S HOME</a><br/><br/>
+                                <a href="http://www.ubunyebeadworks.co.za/" target="_blank">JOB CREATION</a></p>
+                            <div class='payfast'>
+                                <p>Payfast Donations verified as paid to the <br/>
+                                    Homestead via EFT,Debit or Credit Card</p>
+                            </div>
+                            <br/>
+                            <a href="https://www.payfast.co.za/donate/go/thehomestead" target="_blank" class="done"><img src="images/donate.png"/></a>
+                            <br/><br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/> <br/>
+
+
+            <footer class="mainFooter">
+                <h2>Our Sponsors</h2>
+                <p>Copyright by <a href="#">Jonas Esethu</a> &COPY;2015.All rights reserved.</p>
+            </footer>
+
+        </div>
+    </body>
+</html>
